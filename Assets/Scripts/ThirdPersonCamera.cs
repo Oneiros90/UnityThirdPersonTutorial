@@ -320,7 +320,7 @@ public class ThirdPersonCamera : MonoBehaviour
 		}
 		
 		// Set the Look At Weight - amount to use look at IK vs using the head's animation
-		follow.Animator.SetLookAtWeight(lookWeight);
+		//follow.Animator.SetLookAtWeight(lookWeight);
 		
 		// Execute camera state
 		switch (camState)
@@ -367,7 +367,7 @@ public class ThirdPersonCamera : MonoBehaviour
 				this.transform.rotation = rotationShift * this.transform.rotation;		
 				
 				// Move character model's head
-		        follow.Animator.SetLookAtPosition(firstPersonCamPos.XForm.position + firstPersonCamPos.XForm.forward);
+		        //follow.Animator.SetLookAtPosition(firstPersonCamPos.XForm.position + firstPersonCamPos.XForm.forward);
 				lookWeight = Mathf.Lerp(lookWeight, 1.0f, Time.deltaTime * firstPersonLookSpeed);
 				
 				
